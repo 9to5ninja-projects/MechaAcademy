@@ -1,0 +1,21 @@
+{
+  "id": "CRD_PLT_VET_ALEX001",
+  "name": "Alex Carter",
+  "type": "pilot",
+  "subtype": "character",
+  "source": "pilot_001_cadet_alex",
+  "description": "A cadet specializing in recon with quick reflexes and eagerness to learn.",
+  "costs": {},
+  "requirements": { "unlockRequirement": "academy_intro" },
+  "effects": [
+    { "type": "stat_bonus", "stats": { "gunnery": 6, "piloting": 7, "systems": 5, "leadership": 4 } },
+    { "type": "trait", "traits": ["quick reflexes", "eager learner"] }
+  ],
+  "tags": ["pilot", "recon", "cadet"],
+  "rarity": "common",
+  "unlockRequirement": "academy_intro",
+  "value": null,
+  "buyFactor": null,
+  "sellFactor": null,
+  "experience": { "current": 0, "level": 1, "maxLevel": 10, "xpToNext": 100 }
+}

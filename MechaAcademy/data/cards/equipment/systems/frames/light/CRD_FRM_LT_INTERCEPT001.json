@@ -1,0 +1,22 @@
+{
+  "id": "CRD_FRM_LT_INTERCEPT001",
+  "name": "Interceptor Frame",
+  "type": "frame",
+  "subtype": "light",
+  "source": "frame_light_002_interceptor",
+  "description": "A light interceptor frame with energy weapon efficiency bonus.",
+  "costs": {},
+  "requirements": { "unlockRequirement": "intermediate_energy_course" },
+  "effects": [
+    { "type": "base_stats", "stats": { "armor": 80, "speed": 175, "energyCapacity": 240, "heatDissipation": 14, "weightLimit": 55 } },
+    { "type": "hardpoints", "hardpoints": { "head": 1, "torso": 2, "arms": 3, "legs": 2, "generator": 1 } },
+    { "type": "special", "special": ["+15% energy weapon efficiency"] }
+  ],
+  "tags": ["frame", "interceptor", "light"],
+  "rarity": "uncommon",
+  "unlockRequirement": "intermediate_energy_course",
+  "value": 6000,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

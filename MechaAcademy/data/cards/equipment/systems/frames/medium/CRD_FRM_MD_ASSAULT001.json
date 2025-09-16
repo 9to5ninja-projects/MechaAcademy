@@ -1,0 +1,22 @@
+{
+  "id": "CRD_FRM_MD_ASSAULT001",
+  "name": "Assault Frame",
+  "type": "frame",
+  "subtype": "medium",
+  "source": "frame_medium_001_assault",
+  "description": "A balanced medium frame designed for frontline combat with multiple weapon hardpoints.",
+  "costs": {},
+  "requirements": { "unlockRequirement": "intermediate_combat_course" },
+  "effects": [
+    { "type": "base_stats", "stats": { "armor": 120, "speed": 150, "energyCapacity": 300, "heatDissipation": 15, "weightLimit": 80 } },
+    { "type": "hardpoints", "hardpoints": { "head": 1, "torso": 4, "arms": 3, "legs": 2, "generator": 1 } },
+    { "type": "special", "special": ["+15% weapon damage", "balanced mobility"] }
+  ],
+  "tags": ["frame", "assault", "medium"],
+  "rarity": "uncommon",
+  "unlockRequirement": "intermediate_combat_course",
+  "value": 12000,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

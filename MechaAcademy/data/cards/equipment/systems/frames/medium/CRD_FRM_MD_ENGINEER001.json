@@ -1,0 +1,22 @@
+{
+  "id": "CRD_FRM_MD_ENGINEER001",
+  "name": "Engineer Frame",
+  "type": "frame",
+  "subtype": "medium",
+  "source": "frame_medium_003_engineer",
+  "description": "A medium engineer frame with weight capacity and repair bonus.",
+  "costs": {},
+  "requirements": { "unlockRequirement": "engineering_course" },
+  "effects": [
+    { "type": "base_stats", "stats": { "armor": 130, "speed": 100, "energyCapacity": 270, "heatDissipation": 19, "weightLimit": 100 } },
+    { "type": "hardpoints", "hardpoints": { "head": 1, "torso": 2, "arms": 2, "legs": 3, "generator": 2 } },
+    { "type": "special", "special": ["+20% weight capacity", "repair bonus"] }
+  ],
+  "tags": ["frame", "engineer", "medium"],
+  "rarity": "uncommon",
+  "unlockRequirement": "engineering_course",
+  "value": 9000,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

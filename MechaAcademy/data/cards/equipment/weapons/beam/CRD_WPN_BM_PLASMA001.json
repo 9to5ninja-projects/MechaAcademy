@@ -1,0 +1,25 @@
+{
+  "id": "CRD_WPN_BM_PLASMA001",
+  "name": "Plasma Rifle Attack",
+  "type": "equipment",
+  "subtype": "weapon",
+  "source": "part_plasma_rifle",
+  "description": "A high-powered plasma rifle attack.",
+  "costs": { "energy": 35, "actions": 1 },
+  "requirements": { "frameClass": "medium" },
+  "effects": [
+    {
+      "type": "damage",
+      "target": "enemy",
+      "formula": "weapon.attack * pilot.targeting_efficiency",
+      "heatGeneration": 15
+    }
+  ],
+  "tags": ["ranged", "plasma", "attack"],
+  "rarity": "uncommon",
+  "unlockRequirement": "advanced_energy_weapons",
+  "value": 8500,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

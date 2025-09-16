@@ -1,0 +1,22 @@
+{
+  "id": "CRD_ARM_TR_STANDARD001",
+  "name": "Standard Torso Armor",
+  "type": "equipment",
+  "subtype": "armor",
+  "slot": "torso",
+  "source": "part_standard_torso_armor",
+  "description": "Standard torso armor for balanced protection.",
+  "costs": {},
+  "requirements": {},
+  "effects": [
+    { "type": "armor", "value": 15 },
+    { "type": "weight", "value": 8 }
+  ],
+  "tags": ["armor", "torso"],
+  "rarity": "common",
+  "unlockRequirement": "basic_armor_course",
+  "value": 1200,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

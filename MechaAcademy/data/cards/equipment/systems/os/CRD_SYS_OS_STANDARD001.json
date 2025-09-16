@@ -1,0 +1,21 @@
+{
+  "id": "CRD_SYS_OS_STANDARD001",
+  "name": "Standard OS",
+  "type": "equipment",
+  "subtype": "os",
+  "source": "part_standard_os",
+  "description": "Standard operating system for mecha.",
+  "costs": {},
+  "requirements": {},
+  "effects": [
+    { "type": "os_bonus", "value": "baseline performance" },
+    { "type": "weight", "value": 2 }
+  ],
+  "tags": ["os", "system"],
+  "rarity": "common",
+  "unlockRequirement": "basic_os_systems",
+  "value": 1000,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

@@ -1,0 +1,22 @@
+{
+  "id": "CRD_FRM_MD_ASSAULT002",
+  "name": "Assault Frame",
+  "type": "frame",
+  "subtype": "medium",
+  "source": "frame_medium_001_assault",
+  "description": "A medium assault frame with weapon damage bonus.",
+  "costs": {},
+  "requirements": { "unlockRequirement": "assault_tactics_course" },
+  "effects": [
+    { "type": "base_stats", "stats": { "armor": 140, "speed": 120, "energyCapacity": 300, "heatDissipation": 18, "weightLimit": 85 } },
+    { "type": "hardpoints", "hardpoints": { "head": 2, "torso": 3, "arms": 3, "legs": 2, "generator": 1 } },
+    { "type": "special", "special": ["+10% weapon damage"] }
+  ],
+  "tags": ["frame", "assault", "medium"],
+  "rarity": "uncommon",
+  "unlockRequirement": "assault_tactics_course",
+  "value": 8000,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

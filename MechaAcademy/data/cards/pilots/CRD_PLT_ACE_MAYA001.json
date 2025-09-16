@@ -1,0 +1,21 @@
+{
+  "id": "CRD_PLT_ACE_MAYA001",
+  "name": "Maya Torres",
+  "type": "pilot",
+  "subtype": "character",
+  "source": "pilot_002_veteran_maya",
+  "description": "A veteran pilot specializing in heavy weapons and tactical combat.",
+  "costs": {},
+  "requirements": { "unlockRequirement": "advanced_combat_theory" },
+  "effects": [
+    { "type": "stat_bonus", "stats": { "gunnery": 9, "piloting": 6, "systems": 7, "leadership": 8 } },
+    { "type": "trait", "traits": ["veteran", "heavy weapons specialist", "tactical mind"] }
+  ],
+  "tags": ["pilot", "veteran", "heavy weapons"],
+  "rarity": "uncommon",
+  "unlockRequirement": "advanced_combat_theory",
+  "value": null,
+  "buyFactor": null,
+  "sellFactor": null,
+  "experience": { "current": 0, "level": 1, "maxLevel": 10, "xpToNext": 100 }
+}

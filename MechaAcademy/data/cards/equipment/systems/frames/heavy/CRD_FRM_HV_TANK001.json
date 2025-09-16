@@ -1,0 +1,22 @@
+{
+  "id": "CRD_FRM_HV_TANK001",
+  "name": "Heavy Tank Frame",
+  "type": "frame",
+  "subtype": "heavy",
+  "source": "frame_heavy_001_tank",
+  "description": "A heavily armored tank frame with maximum weapon hardpoints and defensive capabilities.",
+  "costs": {},
+  "requirements": { "unlockRequirement": "advanced_combat_theory" },
+  "effects": [
+    { "type": "base_stats", "stats": { "armor": 200, "speed": 100, "energyCapacity": 400, "heatDissipation": 20, "weightLimit": 120 } },
+    { "type": "hardpoints", "hardpoints": { "head": 2, "torso": 6, "arms": 4, "legs": 3, "generator": 2 } },
+    { "type": "special", "special": ["+30% armor effectiveness", "-20% movement speed", "+50% weapon capacity"] }
+  ],
+  "tags": ["frame", "tank", "heavy"],
+  "rarity": "rare",
+  "unlockRequirement": "advanced_combat_theory",
+  "value": 25000,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

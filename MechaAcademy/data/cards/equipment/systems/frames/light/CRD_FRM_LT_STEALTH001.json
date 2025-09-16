@@ -1,0 +1,22 @@
+{
+  "id": "CRD_FRM_LT_STEALTH001",
+  "name": "Stealth Frame",
+  "type": "frame",
+  "subtype": "light",
+  "source": "frame_light_003_stealth",
+  "description": "A light stealth frame with radar signature reduction and sensor boost.",
+  "costs": {},
+  "requirements": { "unlockRequirement": "advanced_stealth_course" },
+  "effects": [
+    { "type": "base_stats", "stats": { "armor": 60, "speed": 150, "energyCapacity": 200, "heatDissipation": 13, "weightLimit": 45 } },
+    { "type": "hardpoints", "hardpoints": { "head": 2, "torso": 2, "arms": 2, "legs": 2, "generator": 1 } },
+    { "type": "special", "special": ["radar signature reduction", "sensor boost"] }
+  ],
+  "tags": ["frame", "stealth", "light"],
+  "rarity": "rare",
+  "unlockRequirement": "advanced_stealth_course",
+  "value": 7000,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

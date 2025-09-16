@@ -1,0 +1,28 @@
+{
+  "id": "CRD_WPN_PH_AUTOCANNON001",
+  "name": "Autocannon",
+  "type": "equipment",
+  "subtype": "weapon",
+  "source": "part_autocannon",
+  "description": "A common autocannon with rapid fire capability.",
+  "costs": { "energy": 20, "actions": 1 },
+  "requirements": { "frameClass": "medium" },
+  "effects": [
+    {
+      "type": "damage",
+      "target": "enemy",
+      "formula": "40 * pilot.targeting_efficiency",
+      "heatGeneration": 8,
+      "accuracy": 80,
+      "range": "medium",
+      "special": ["rapid fire"]
+    }
+  ],
+  "tags": ["ranged", "physical", "rapid fire"],
+  "rarity": "common",
+  "unlockRequirement": "basic_ballistics",
+  "value": 3000,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

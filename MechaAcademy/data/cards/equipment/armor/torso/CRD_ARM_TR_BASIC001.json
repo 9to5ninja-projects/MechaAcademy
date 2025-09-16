@@ -1,0 +1,21 @@
+{
+  "id": "CRD_ARM_TR_BASIC001",
+  "name": "Basic Torso Armor",
+  "type": "equipment",
+  "subtype": "armor",
+  "source": "part_basic_torso_armor",
+  "description": "Standard protective torso armor providing core protection.",
+  "costs": {},
+  "requirements": {},
+  "effects": [
+    { "type": "stat_bonus", "stats": { "armor": 25, "def": 8 } }
+  ],
+  "tags": ["armor", "torso", "protection"],
+  "rarity": "common",
+  "unlockRequirement": "basic_armor_course",
+  "value": 1200,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "weight": 8,
+  "experience": null
+}

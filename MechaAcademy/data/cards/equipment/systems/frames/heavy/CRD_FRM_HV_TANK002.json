@@ -1,0 +1,22 @@
+{
+  "id": "CRD_FRM_HV_TANK002",
+  "name": "Tank Frame",
+  "type": "frame",
+  "subtype": "heavy",
+  "source": "frame_heavy_001_tank",
+  "description": "A heavy tank frame with damage reduction and siege mode.",
+  "costs": {},
+  "requirements": { "unlockRequirement": "heavy_armor_course" },
+  "effects": [
+    { "type": "base_stats", "stats": { "armor": 230, "speed": 80, "energyCapacity": 350, "heatDissipation": 22, "weightLimit": 130 } },
+    { "type": "hardpoints", "hardpoints": { "head": 2, "torso": 4, "arms": 3, "legs": 3, "generator": 1 } },
+    { "type": "special", "special": ["+25% damage reduction", "siege mode"] }
+  ],
+  "tags": ["frame", "tank", "heavy"],
+  "rarity": "rare",
+  "unlockRequirement": "heavy_armor_course",
+  "value": 12000,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

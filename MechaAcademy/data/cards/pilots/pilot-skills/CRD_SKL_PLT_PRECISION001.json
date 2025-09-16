@@ -1,0 +1,29 @@
+{
+  "id": "CRD_SKL_PLT_PRECISION001",
+  "name": "Precision Strike",
+  "type": "pilot",
+  "subtype": "skill",
+  "source": "pilot_skill",
+  "description": "A high-accuracy attack with critical potential.",
+  "costs": { "mental": 3, "actions": 2 },
+  "requirements": { "pilotLevel": 2 },
+  "effects": [
+    {
+      "type": "enhanced_attack",
+      "criticalChance": 0.8,
+      "damageBonus": 1.5
+    }
+  ],
+  "tags": ["attack", "precision"],
+  "rarity": "common",
+  "unlockRequirement": "pilot_training",
+  "value": null,
+  "buyFactor": null,
+  "sellFactor": null,
+  "experience": {
+    "current": 0,
+    "level": 1,
+    "maxLevel": 5,
+    "xpToNext": 100
+  }
+}

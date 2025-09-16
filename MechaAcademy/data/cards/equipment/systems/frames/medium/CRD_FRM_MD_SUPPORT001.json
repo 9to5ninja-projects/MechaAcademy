@@ -1,0 +1,22 @@
+{
+  "id": "CRD_FRM_MD_SUPPORT001",
+  "name": "Support Frame",
+  "type": "frame",
+  "subtype": "medium",
+  "source": "frame_medium_002_support",
+  "description": "A medium support frame with ally buff and comms boost.",
+  "costs": {},
+  "requirements": { "unlockRequirement": "support_operations_course" },
+  "effects": [
+    { "type": "base_stats", "stats": { "armor": 120, "speed": 110, "energyCapacity": 340, "heatDissipation": 17, "weightLimit": 90 } },
+    { "type": "hardpoints", "hardpoints": { "head": 2, "torso": 4, "arms": 2, "legs": 2, "generator": 1 } },
+    { "type": "special", "special": ["ally buff", "comms boost"] }
+  ],
+  "tags": ["frame", "support", "medium"],
+  "rarity": "uncommon",
+  "unlockRequirement": "support_operations_course",
+  "value": 8500,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

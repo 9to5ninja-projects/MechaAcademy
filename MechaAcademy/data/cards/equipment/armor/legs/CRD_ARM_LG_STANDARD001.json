@@ -1,0 +1,22 @@
+{
+  "id": "CRD_ARM_LG_STANDARD001",
+  "name": "Standard Leg Armor",
+  "type": "equipment",
+  "subtype": "armor",
+  "slot": "legs",
+  "source": "part_standard_leg_armor",
+  "description": "Standard leg armor for mobility and protection.",
+  "costs": {},
+  "requirements": {},
+  "effects": [
+    { "type": "armor", "value": 10 },
+    { "type": "weight", "value": 4 }
+  ],
+  "tags": ["armor", "legs"],
+  "rarity": "common",
+  "unlockRequirement": "basic_armor_course",
+  "value": 700,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

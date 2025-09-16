@@ -1,0 +1,21 @@
+{
+  "id": "CRD_ARM_HD_BASIC001",
+  "name": "Basic Head Armor",
+  "type": "equipment",
+  "subtype": "armor",
+  "source": "part_basic_head_armor",
+  "description": "Standard protective head armor for mecha frames.",
+  "costs": {},
+  "requirements": {},
+  "effects": [
+    { "type": "stat_bonus", "stats": { "armor": 15, "def": 5 } }
+  ],
+  "tags": ["armor", "head", "protection"],
+  "rarity": "common",
+  "unlockRequirement": "basic_armor_course",
+  "value": 800,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "weight": 3,
+  "experience": null
+}

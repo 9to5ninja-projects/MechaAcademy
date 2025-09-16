@@ -1,0 +1,21 @@
+{
+  "id": "CRD_CPT_AI_NEXUS001",
+  "name": "NEXUS",
+  "type": "copilot",
+  "subtype": "ai",
+  "source": "copilot_002_nexus_advanced",
+  "description": "Advanced AI copilot with enhanced tactical analysis and system optimization.",
+  "costs": {},
+  "requirements": { "unlockRequirement": "advanced_ai_systems" },
+  "effects": [
+    { "type": "stat_bonus", "stats": { "targeting": 8, "evasion": 7, "systemSupport": 9 } },
+    { "type": "trait", "traits": ["advanced ai", "tactical analysis", "system optimizer"] }
+  ],
+  "tags": ["copilot", "ai", "advanced", "tactical"],
+  "rarity": "uncommon",
+  "unlockRequirement": "advanced_ai_systems",
+  "value": null,
+  "buyFactor": null,
+  "sellFactor": null,
+  "experience": { "current": 0, "level": 1, "maxLevel": 10, "xpToNext": 100 }
+}

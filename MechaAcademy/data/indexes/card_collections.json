@@ -1,0 +1,35 @@
+{
+    "starter_pilot_deck": {
+        "name": "Cadet Training Deck",
+        "description": "Basic pilot skills for new academy students",
+        "cards": [
+            "skill_001_basic_targeting",
+            "skill_002_evasive_movement", 
+            "skill_003_system_check",
+            "skill_004_emergency_protocols"
+        ],
+        "unlockRequirement": "character_creation"
+    },
+    "combat_specialist_deck": {
+        "name": "Combat Specialist Cards",
+        "description": "Advanced combat maneuvers and tactics",
+        "cards": [
+            "skill_010_precision_shot",
+            "skill_011_suppressing_fire",
+            "skill_012_combat_reflexes",
+            "skill_013_weapon_mastery"
+        ],
+        "unlockRequirement": "course_combat_specialist_complete"
+    },
+    "engineer_deck": {
+        "name": "Systems Engineer Cards", 
+        "description": "Technical skills and system optimization",
+        "cards": [
+            "skill_020_overclock_system",
+            "skill_021_emergency_repair",
+            "skill_022_heat_management",
+            "skill_023_power_optimization"
+        ],
+        "unlockRequirement": "course_systems_engineer_complete"
+    }
+}

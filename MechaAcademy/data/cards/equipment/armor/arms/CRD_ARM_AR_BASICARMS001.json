@@ -1,0 +1,21 @@
+{
+  "id": "CRD_ARM_AR_BASICARMS001",
+  "name": "Basic Arms Armor",
+  "type": "equipment",
+  "subtype": "armor",
+  "source": "part_basic_arms_armor",
+  "description": "Standard protective arm armor for weapon systems.",
+  "costs": {},
+  "requirements": {},
+  "effects": [
+    { "type": "stat_bonus", "stats": { "armor": 18, "def": 6 } }
+  ],
+  "tags": ["armor", "arms", "protection"],
+  "rarity": "common",
+  "unlockRequirement": "basic_armor_course",
+  "value": 1000,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "weight": 5,
+  "experience": null
+}

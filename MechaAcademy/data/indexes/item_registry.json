@@ -1,0 +1,32 @@
+{
+    "frame_light_001_scout": {
+        "category": "frame_light",
+        "subcategory": "scout",
+        "tier": "basic",
+        "unlockRequirement": "course_001_basic_piloting"
+    },
+    "frame_medium_001_assault": {
+        "category": "frame_medium", 
+        "subcategory": "assault",
+        "tier": "intermediate",
+        "unlockRequirement": "course_003_combat_theory"
+    },
+    "weapon_beam_001_laser_rifle": {
+        "category": "weapon_beam",
+        "subcategory": "rifle",
+        "tier": "basic",
+        "unlockRequirement": "course_002_energy_weapons"
+    },
+    "armor_head_001_basic_helmet": {
+        "category": "armor_head",
+        "subcategory": "standard",
+        "tier": "basic",
+        "unlockRequirement": "none"
+    },
+    "cooler_001_basic_heatsink": {
+        "category": "cooler",
+        "subcategory": "passive",
+        "tier": "basic",
+        "unlockRequirement": "course_004_thermal_management"
+    }
+}

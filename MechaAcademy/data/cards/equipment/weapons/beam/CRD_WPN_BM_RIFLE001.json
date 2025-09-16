@@ -1,0 +1,27 @@
+{
+  "id": "CRD_WPN_BM_RIFLE001",
+  "name": "Light Beam Rifle",
+  "type": "equipment",
+  "subtype": "weapon",
+  "source": "part_light_beam_rifle",
+  "description": "A lightweight, precise energy weapon for light frames.",
+  "costs": { "energy": 25, "actions": 1 },
+  "requirements": { "frameClass": "light" },
+  "effects": [
+    {
+      "type": "damage",
+      "target": "enemy",
+      "formula": "35 * pilot.targeting_efficiency",
+      "heatGeneration": 10,
+      "accuracy": 85,
+      "range": "medium"
+    }
+  ],
+  "tags": ["ranged", "beam", "precision"],
+  "rarity": "common",
+  "unlockRequirement": "basic_energy_weapons",
+  "value": 2800,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

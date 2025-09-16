@@ -1,0 +1,21 @@
+{
+  "id": "CRD_SYS_CL_PASSIVE001",
+  "name": "Passive Heatsink",
+  "type": "equipment",
+  "subtype": "cooler",
+  "source": "part_passive_heatsink",
+  "description": "Passive heatsink for basic heat dissipation.",
+  "costs": {},
+  "requirements": {},
+  "effects": [
+    { "type": "cooling", "value": 10 },
+    { "type": "weight", "value": 3 }
+  ],
+  "tags": ["cooler", "heat"],
+  "rarity": "common",
+  "unlockRequirement": "basic_cooling_systems",
+  "value": 800,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

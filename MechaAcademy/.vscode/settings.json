@@ -1,0 +1,24 @@
+{
+    "github.copilot.enable": {
+        "*": true,
+        "javascript": true,
+        "json": true,
+        "markdown": true
+    },
+    "github.copilot.inlineSuggest.enable": true,
+    "github.copilot.chat.enable": true,
+    "files.associations": {
+        "*.json": "jsonc",
+        "frames.json": "json",
+        "parts.json": "json",
+        "missions.json": "json"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "files.watcherExclude": {
+        "**/audio/**": true,
+        "**/img/**": true,
+        "**/movies/**": true
+    }
+}

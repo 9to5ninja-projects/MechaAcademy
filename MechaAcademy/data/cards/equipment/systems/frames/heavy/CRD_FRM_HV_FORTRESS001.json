@@ -1,0 +1,22 @@
+{
+  "id": "CRD_FRM_HV_FORTRESS001",
+  "name": "Fortress Frame",
+  "type": "frame",
+  "subtype": "heavy",
+  "source": "frame_heavy_003_fortress",
+  "description": "A heavy fortress frame with command systems and ally buffs.",
+  "costs": {},
+  "requirements": { "unlockRequirement": "command_course" },
+  "effects": [
+    { "type": "base_stats", "stats": { "armor": 260, "speed": 60, "energyCapacity": 420, "heatDissipation": 25, "weightLimit": 150 } },
+    { "type": "hardpoints", "hardpoints": { "head": 3, "torso": 5, "arms": 3, "legs": 4, "generator": 1 } },
+    { "type": "special", "special": ["command systems", "ally buffs"] }
+  ],
+  "tags": ["frame", "fortress", "heavy"],
+  "rarity": "epic",
+  "unlockRequirement": "command_course",
+  "value": 15000,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

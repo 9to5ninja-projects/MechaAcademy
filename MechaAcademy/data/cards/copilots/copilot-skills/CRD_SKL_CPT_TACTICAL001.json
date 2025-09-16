@@ -1,0 +1,22 @@
+{
+  "id": "CRD_SKL_CPT_TACTICAL001",
+  "name": "Tactical Analysis Module",
+  "type": "copilot_skill",
+  "subtype": "software",
+  "source": "module_tactical_analysis",
+  "description": "Advanced tactical analysis software that provides combat bonuses and enemy weakness detection.",
+  "costs": {},
+  "requirements": { "copilotLevel": 2, "unlockRequirement": "tactical_systems_course" },
+  "effects": [
+    { "type": "stat_bonus", "stats": { "targeting": 4, "systemSupport": 3 } },
+    { "type": "trait", "traits": ["tactical analysis", "enemy scanner"] },
+    { "type": "special", "special": ["+20% damage vs weak points", "reveals enemy stats"] }
+  ],
+  "tags": ["skill", "tactical", "analysis"],
+  "rarity": "uncommon",
+  "unlockRequirement": "tactical_systems_course",
+  "value": 2000,
+  "buyFactor": 1.0,
+  "sellFactor": 0.3,
+  "experience": null
+}

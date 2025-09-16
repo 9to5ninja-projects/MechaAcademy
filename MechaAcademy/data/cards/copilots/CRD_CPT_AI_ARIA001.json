@@ -1,0 +1,21 @@
+{
+  "id": "CRD_CPT_AI_ARIA001",
+  "name": "ARIA",
+  "type": "copilot",
+  "subtype": "ai",
+  "source": "copilot_001_aria_basic",
+  "description": "AI copilot providing basic assistance and support.",
+  "costs": {},
+  "requirements": { "unlockRequirement": "academy_intro" },
+  "effects": [
+    { "type": "stat_bonus", "stats": { "targeting": 5, "evasion": 5, "systemSupport": 6 } },
+    { "type": "trait", "traits": ["calm", "supportive"] }
+  ],
+  "tags": ["copilot", "ai", "support"],
+  "rarity": "common",
+  "unlockRequirement": "academy_intro",
+  "value": null,
+  "buyFactor": null,
+  "sellFactor": null,
+  "experience": { "current": 0, "level": 1, "maxLevel": 10, "xpToNext": 100 }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "CRD_FRM_MD_SPECIAL001",
+  "name": "Specialist Frame",
+  "type": "frame",
+  "subtype": "medium",
+  "source": "frame_medium_004_specialist",
+  "description": "A medium specialist frame with advanced fire control.",
+  "costs": {},
+  "requirements": { "unlockRequirement": "specialist_training" },
+  "effects": [
+    { "type": "base_stats", "stats": { "armor": 150, "speed": 130, "energyCapacity": 290, "heatDissipation": 16, "weightLimit": 95 } },
+    { "type": "hardpoints", "hardpoints": { "head": 3, "torso": 2, "arms": 4, "legs": 2, "generator": 1 } },
+    { "type": "special", "special": ["advanced fire control"] }
+  ],
+  "tags": ["frame", "specialist", "medium"],
+  "rarity": "rare",
+  "unlockRequirement": "specialist_training",
+  "value": 9500,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

@@ -1,0 +1,21 @@
+{
+  "id": "CRD_SYS_GN_STANDARD001",
+  "name": "Standard Generator",
+  "type": "equipment",
+  "subtype": "generator",
+  "source": "part_standard_generator",
+  "description": "Standard generator for basic energy needs.",
+  "costs": {},
+  "requirements": {},
+  "effects": [
+    { "type": "energy_output", "value": 200 },
+    { "type": "weight", "value": 10 }
+  ],
+  "tags": ["generator", "energy"],
+  "rarity": "common",
+  "unlockRequirement": "basic_power_systems",
+  "value": 2000,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

@@ -1,0 +1,37 @@
+{
+  "id": "CRD_WPN_BM_HEAVYPLASMA001",
+  "name": "Heavy Plasma Cannon",
+  "type": "equipment",
+  "subtype": "weapon",
+  "source": "part_heavy_plasma_cannon",
+  "description": "A devastating heavy energy weapon that requires significant power and structural support.",
+  "costs": { "energy": 60, "actions": 1 },
+  "requirements": { 
+    "frameClass": ["medium", "heavy"], 
+    "hardpointType": "torso",
+    "weightRequirement": 15,
+    "energyRequirement": 60,
+    "heatCapacity": 25
+  },
+  "effects": [
+    {
+      "type": "damage",
+      "target": "enemy",
+      "formula": "85 * pilot.targeting_efficiency",
+      "heatGeneration": 25,
+      "accuracy": 70,
+      "range": "long",
+      "armorPiercing": 20
+    }
+  ],
+  "tags": ["ranged", "plasma", "heavy", "armor-piercing"],
+  "rarity": "rare",
+  "unlockRequirement": "advanced_energy_weapons",
+  "value": 8500,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "weight": 15,
+  "energyDrain": 60,
+  "heatGeneration": 25,
+  "experience": null
+}

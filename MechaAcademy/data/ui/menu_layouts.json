@@ -1,0 +1,48 @@
+{
+    "academy_hub": {
+        "layout": "radial",
+        "areas": [
+            {
+                "id": "hangar",
+                "name": "Hangar Bay",
+                "icon": "mecha_icon",
+                "position": { "x": 200, "y": 150 },
+                "description": "Customize your mecha loadout"
+            },
+            {
+                "id": "courses",
+                "name": "Academy Courses", 
+                "icon": "book_icon",
+                "position": { "x": 400, "y": 100 },
+                "description": "Advance your pilot training"
+            },
+            {
+                "id": "missions",
+                "name": "Mission Control",
+                "icon": "target_icon", 
+                "position": { "x": 600, "y": 150 },
+                "description": "Accept contracts and missions"
+            }
+        ]
+    },
+    "mecha_customization": {
+        "layout": "sidebar_main",
+        "windows": [
+            {
+                "id": "frame_selection",
+                "position": { "x": 0, "y": 0, "width": 200, "height": 400 },
+                "type": "list_selection"
+            },
+            {
+                "id": "parts_inventory",
+                "position": { "x": 200, "y": 0, "width": 300, "height": 400 },
+                "type": "categorized_grid"
+            },
+            {
+                "id": "loadout_display",
+                "position": { "x": 500, "y": 0, "width": 300, "height": 300 },
+                "type": "visual_mecha"
+            }
+        ]
+    }
+}

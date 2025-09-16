@@ -1,0 +1,28 @@
+{
+  "id": "CRD_WPN_MS_POD001",
+  "name": "Missile Pod",
+  "type": "equipment",
+  "subtype": "weapon",
+  "source": "part_missile_pod",
+  "description": "A missile pod for area effect attacks.",
+  "costs": { "energy": 15, "actions": 1 },
+  "requirements": { "frameClass": "medium" },
+  "effects": [
+    {
+      "type": "damage",
+      "target": "enemy",
+      "formula": "50 * pilot.targeting_efficiency",
+      "heatGeneration": 5,
+      "accuracy": 75,
+      "range": "long",
+      "special": ["area effect"]
+    }
+  ],
+  "tags": ["ranged", "projectile", "area"],
+  "rarity": "common",
+  "unlockRequirement": "basic_missile_systems",
+  "value": 3500,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

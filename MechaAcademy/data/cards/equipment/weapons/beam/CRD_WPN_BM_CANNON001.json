@@ -1,0 +1,28 @@
+{
+  "id": "CRD_WPN_BM_CANNON001",
+  "name": "Medium Laser Cannon",
+  "type": "equipment",
+  "subtype": "weapon",
+  "source": "part_medium_laser_cannon",
+  "description": "A powerful medium laser cannon with piercing capability.",
+  "costs": { "energy": 35, "actions": 1 },
+  "requirements": { "frameClass": "medium" },
+  "effects": [
+    {
+      "type": "damage",
+      "target": "enemy",
+      "formula": "55 * pilot.targeting_efficiency",
+      "heatGeneration": 18,
+      "accuracy": 80,
+      "range": "long",
+      "special": ["piercing"]
+    }
+  ],
+  "tags": ["ranged", "beam", "piercing"],
+  "rarity": "uncommon",
+  "unlockRequirement": "intermediate_energy_weapons",
+  "value": 4200,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

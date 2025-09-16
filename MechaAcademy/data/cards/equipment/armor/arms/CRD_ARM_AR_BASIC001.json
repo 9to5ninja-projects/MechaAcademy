@@ -1,0 +1,22 @@
+{
+  "id": "CRD_ARM_AR_BASIC001",
+  "name": "Basic Arm Armor",
+  "type": "equipment",
+  "subtype": "armor",
+  "slot": "arms",
+  "source": "part_basic_arm_armor",
+  "description": "Basic arm armor for mecha.",
+  "costs": {},
+  "requirements": {},
+  "effects": [
+    { "type": "armor", "value": 8 },
+    { "type": "weight", "value": 3 }
+  ],
+  "tags": ["armor", "arms"],
+  "rarity": "common",
+  "unlockRequirement": "basic_armor_course",
+  "value": 600,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

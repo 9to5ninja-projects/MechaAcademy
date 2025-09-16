@@ -1,0 +1,22 @@
+{
+  "id": "CRD_FRM_HV_SIEGE001",
+  "name": "Siege Frame",
+  "type": "frame",
+  "subtype": "heavy",
+  "source": "frame_heavy_002_siege",
+  "description": "A heavy siege frame with heavy weapon compatibility.",
+  "costs": {},
+  "requirements": { "unlockRequirement": "siege_operations_course" },
+  "effects": [
+    { "type": "base_stats", "stats": { "armor": 200, "speed": 90, "energyCapacity": 380, "heatDissipation": 21, "weightLimit": 120 } },
+    { "type": "hardpoints", "hardpoints": { "head": 1, "torso": 3, "arms": 4, "legs": 2, "generator": 2 } },
+    { "type": "special", "special": ["heavy weapon compatibility"] }
+  ],
+  "tags": ["frame", "siege", "heavy"],
+  "rarity": "rare",
+  "unlockRequirement": "siege_operations_course",
+  "value": 13000,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "experience": null
+}

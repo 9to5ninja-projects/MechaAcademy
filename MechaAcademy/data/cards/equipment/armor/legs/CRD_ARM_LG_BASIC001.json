@@ -1,0 +1,21 @@
+{
+  "id": "CRD_ARM_LG_BASIC001",
+  "name": "Basic Legs Armor",
+  "type": "equipment",
+  "subtype": "armor",
+  "source": "part_basic_legs_armor",
+  "description": "Standard protective leg armor for mobility systems.",
+  "costs": {},
+  "requirements": {},
+  "effects": [
+    { "type": "stat_bonus", "stats": { "armor": 20, "def": 7 } }
+  ],
+  "tags": ["armor", "legs", "protection"],
+  "rarity": "common",
+  "unlockRequirement": "basic_armor_course",
+  "value": 1100,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "weight": 6,
+  "experience": null
+}

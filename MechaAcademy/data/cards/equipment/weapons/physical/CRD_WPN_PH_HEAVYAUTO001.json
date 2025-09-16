@@ -1,0 +1,37 @@
+{
+  "id": "CRD_WPN_PH_HEAVYAUTO001",
+  "name": "Heavy Autocannon",
+  "type": "equipment",
+  "subtype": "weapon",
+  "source": "part_heavy_autocannon",
+  "description": "A rapid-fire ballistic weapon with high damage output but significant weight and ammo requirements.",
+  "costs": { "energy": 15, "actions": 1, "ammo": 20 },
+  "requirements": { 
+    "frameClass": ["medium", "heavy"], 
+    "hardpointType": "arms",
+    "weightRequirement": 12,
+    "energyRequirement": 15,
+    "ammoCapacity": 200
+  },
+  "effects": [
+    {
+      "type": "damage",
+      "target": "enemy",
+      "formula": "45 * pilot.targeting_efficiency * 3",
+      "heatGeneration": 8,
+      "accuracy": 75,
+      "range": "medium",
+      "burstFire": 3
+    }
+  ],
+  "tags": ["ranged", "ballistic", "burst", "heavy"],
+  "rarity": "uncommon",
+  "unlockRequirement": "advanced_ballistic_weapons",
+  "value": 6200,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "weight": 12,
+  "energyDrain": 15,
+  "heatGeneration": 8,
+  "experience": null
+}

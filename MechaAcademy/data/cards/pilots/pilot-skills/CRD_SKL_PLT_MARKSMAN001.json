@@ -1,0 +1,22 @@
+{
+  "id": "CRD_SKL_PLT_MARKSMAN001",
+  "name": "Marksman Training",
+  "type": "pilot_skill",
+  "subtype": "training",
+  "source": "skill_marksman_training",
+  "description": "Advanced marksmanship training that improves weapon accuracy and critical hit chance.",
+  "costs": {},
+  "requirements": { "pilotLevel": 3, "unlockRequirement": "advanced_gunnery_course" },
+  "effects": [
+    { "type": "stat_bonus", "stats": { "gunnery": 3, "targeting": 2 } },
+    { "type": "trait", "traits": ["marksman", "precision shooter"] },
+    { "type": "special", "special": ["+15% weapon accuracy", "+10% critical hit chance"] }
+  ],
+  "tags": ["skill", "gunnery", "accuracy"],
+  "rarity": "uncommon",
+  "unlockRequirement": "advanced_gunnery_course",
+  "value": 1500,
+  "buyFactor": 1.0,
+  "sellFactor": 0.3,
+  "experience": null
+}
