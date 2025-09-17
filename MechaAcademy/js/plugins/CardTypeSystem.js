@@ -83,8 +83,42 @@
                 optionalFields: ['prerequisites', 'cooldown', 'cost']
             });
 
+            // Add weapon skill card type
+            this.cardTypes.set('SKL_WPN', {
+                name: 'Weapon Skill',
+                description: 'Weapon skill cards for equipment',
+                subcategories: ['BEAM', 'BALLISTIC', 'MISSILE', 'MELEE'],
+                directory: 'equipment-skills/weapons',
+                requiredFields: ['name', 'costs', 'effects', 'type'],
+                optionalFields: ['requirements', 'tags', 'rarity']
+            });
             // Define subcategories
             this.setupSubcategories();
+            // Weapon skill subcategories
+            this.subcategories.set('BEAM', {
+                name: 'Beam Weapon Skill',
+                description: 'Skills for beam weapons',
+                parent: 'SKL_WPN',
+                subdirectory: 'beam'
+            });
+            this.subcategories.set('BALLISTIC', {
+                name: 'Ballistic Weapon Skill',
+                description: 'Skills for ballistic weapons',
+                parent: 'SKL_WPN',
+                subdirectory: 'ballistic'
+            });
+            this.subcategories.set('MISSILE', {
+                name: 'Missile Weapon Skill',
+                description: 'Skills for missile weapons',
+                parent: 'SKL_WPN',
+                subdirectory: 'missile'
+            });
+            this.subcategories.set('MELEE', {
+                name: 'Melee Weapon Skill',
+                description: 'Skills for melee weapons',
+                parent: 'SKL_WPN',
+                subdirectory: 'melee'
+            });
         }
 
         setupSubcategories() {
@@ -394,31 +428,39 @@
             }
 
             // Map new card IDs to existing directory structure
+
+            // Frame card subfolder logic
+            if (cardId.startsWith('CRD_FRM_')) {
+                // Parse subtype (e.g., LT, MD, HV)
+                const match = cardId.match(/^CRD_FRM_([A-Z]{2})_/);
+                if (match) {
+                    const subtype = match[1];
+                    let subfolder = '';
+                    if (subtype === 'LT') subfolder = 'light';
+                    else if (subtype === 'MD') subfolder = 'medium';
+                    else if (subtype === 'HV') subfolder = 'heavy';
+                    if (subfolder) {
+                        return `data/cards/equipment/systems/frames/${subfolder}/${cardId}.json`;
+                    }
+                }
+            }
+
             const pathMappings = {
                 // Pilots - keep in existing pilots directory
                 'CRD_PLT_VET_ALEX001': 'data/cards/pilots/CRD_PLT_VET_ALEX001.json',
                 'CRD_PLT_ACE_MAYA001': 'data/cards/pilots/CRD_PLT_ACE_MAYA001.json',
-                
                 // Copilots - keep in existing copilots directory
                 'CRD_CPT_AI_ARIA001': 'data/cards/copilots/CRD_CPT_AI_ARIA001.json',
                 'CRD_CPT_AI_NEXUS001': 'data/cards/copilots/CRD_CPT_AI_NEXUS001.json',
-                
-                // Frames - keep in existing frames directory
-                'CRD_FRM_LT_SCOUT001': 'data/cards/equipment/systems/frames/CRD_FRM_LT_SCOUT001.json',
-                'CRD_FRM_MD_ASSAULT001': 'data/cards/equipment/systems/frames/CRD_FRM_MD_ASSAULT001.json',
-                'CRD_FRM_HV_TANK001': 'data/cards/equipment/systems/frames/CRD_FRM_HV_TANK001.json',
-                
                 // Weapons - keep in existing weapon directories
                 'CRD_WPN_BM_RIFLE001': 'data/cards/equipment/weapons/beam/CRD_WPN_BM_RIFLE001.json',
                 'CRD_WPN_BM_CANNON001': 'data/cards/equipment/weapons/beam/CRD_WPN_BM_CANNON001.json',
                 'CRD_WPN_MS_POD001': 'data/cards/equipment/weapons/projectile/CRD_WPN_MS_POD001.json',
-                
                 // Armor - keep in existing armor directories
                 'CRD_ARM_TR_BASIC001': 'data/cards/equipment/armor/torso/CRD_ARM_TR_BASIC001.json',
                 'CRD_ARM_TR_STANDARD001': 'data/cards/equipment/armor/torso/CRD_ARM_TR_STANDARD001.json',
                 'CRD_ARM_LG_BASIC001': 'data/cards/equipment/armor/legs/CRD_ARM_LG_BASIC001.json',
                 'CRD_ARM_LG_STANDARD001': 'data/cards/equipment/armor/legs/CRD_ARM_LG_STANDARD001.json',
-                
                 // Systems - keep in existing system directories
                 'CRD_SYS_GN_STANDARD001': 'data/cards/equipment/systems/generators/CRD_SYS_GN_STANDARD001.json',
                 'CRD_SYS_CL_PASSIVE001': 'data/cards/equipment/systems/coolers/CRD_SYS_CL_PASSIVE001.json',
@@ -434,6 +476,15 @@
             const categoryInfo = this.cardTypes.get(parsed.category);
             if (!categoryInfo) return null;
 
+            // Support weapon skill cards
+            if (parsed.category === 'SKL_WPN') {
+                // e.g. CRD_SKL_WPN_BEAM_SHOT001
+                if (parsed.subcategory === 'BEAM') return `data/cards/equipment/equipment-skills/weapons/${cardId}.json`;
+                if (parsed.subcategory === 'BALLISTIC') return `data/cards/equipment/equipment-skills/weapons/${cardId}.json`;
+                if (parsed.subcategory === 'MISSILE') return `data/cards/equipment/equipment-skills/weapons/${cardId}.json`;
+                if (parsed.subcategory === 'MELEE') return `data/cards/equipment/equipment-skills/weapons/${cardId}.json`;
+                return `data/cards/equipment/equipment-skills/weapons/${cardId}.json`;
+            }
             // Use existing directory structure based on category
             switch (parsed.category) {
                 case 'PLT':

@@ -6,5 +6,6 @@ var $plugins =
 {"name":"DataLoader","status":true,"description":"[v1.0.0] Simple Data Loader","parameters":{}},
 {"name":"CardDataAdapter","status":true,"description":"[v1.0.0] Card Data Adapter - JSON to RPG Maker Translator","parameters":{}},
 {"name":"AcademyMenu","status":true,"description":"[v1.0.0] Academy Menu System - Pilot, Copilot, Frame, and Loadout Management","parameters":{}},
-{"name":"MechaComposite","status":true,"description":"[v1.0.0] Mecha Composite Actor System","parameters":{}}
+{"name":"MechaComposite","status":true,"description":"[v1.0.0] Mecha Composite Actor System","parameters":{}},
+{"name":"TrainingBattleSystem","status":true,"description":"[v1.0.0] Training Battle System - Deck-based Combat","parameters":{}}
 ];

@@ -1,0 +1,27 @@
+{
+  "id": "CRD_SKL_WPN_AIMED_SHOT001",
+  "name": "Aimed Shot",
+  "type": "weapon_skill",
+  "subtype": "precision_attack",
+  "source": "light_beam_rifle",
+  "description": "Precise aimed shot with increased accuracy and damage.",
+  "costs": {
+    "machine": 35,
+    "mental": 10,
+    "heat": 12,
+    "actions": 1
+  },
+  "requirements": { "weaponType": "beam" },
+  "effects": [
+    {
+      "type": "damage",
+      "target": "single_enemy",
+      "formula": "45 + (pilot.gunnery * 4) + weapon.damage_bonus",
+      "accuracy": 95,
+      "range": "medium",
+      "criticalChance": 25
+    }
+  ],
+  "tags": ["weapon", "beam", "precision"],
+  "rarity": "common"
+}

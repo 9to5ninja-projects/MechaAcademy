@@ -851,7 +851,43 @@
         }
 
         commandTrain() {
-            this.showPlaceholder('Training mission coming soon!');
+            try {
+                console.log('[TRAINING] commandTrain called - attempting to start training battle');
+                
+                // Check if training battle system is available
+                if (!window.Scene_TrainingBattle) {
+                    console.error('[TRAINING] Scene_TrainingBattle not found! Training Battle System may not be loaded.');
+                    this.showPlaceholder('Training Battle System not loaded!');
+                    return;
+                }
+                
+                // Check if player has an active mecha
+                const playerMecha = window.MechaCompositeManager?.getActiveMecha();
+                console.log('[TRAINING] Player mecha check:', playerMecha);
+                
+                if (!playerMecha) {
+                    console.error('[TRAINING] No active mecha found!');
+                    this.showPlaceholder('No active mecha! Equip a mecha first.');
+                    return;
+                }
+                
+                console.log('[TRAINING] All checks passed, launching training battle...');
+                console.log('[TRAINING] Player mecha details:', {
+                    name: playerMecha.name,
+                    pilot: playerMecha.pilot?.name,
+                    copilot: playerMecha.copilot?.name,
+                    hasDeck: !!playerMecha.combatDeck,
+                    deckSize: playerMecha.combatDeck?.cards?.length || 0
+                });
+                
+                // Launch the training battle scene
+                SceneManager.push(Scene_TrainingBattle);
+                console.log('[TRAINING] Training battle scene pushed to SceneManager');
+                
+            } catch (error) {
+                console.error('[TRAINING] Error in commandTrain:', error);
+                this.showPlaceholder('Error starting training battle!');
+            }
         }
 
         commandSwitch() {

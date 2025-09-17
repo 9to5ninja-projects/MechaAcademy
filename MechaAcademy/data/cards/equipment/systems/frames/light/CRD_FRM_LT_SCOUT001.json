@@ -8,9 +8,10 @@
   "costs": {},
   "requirements": { "unlockRequirement": "basic_combat_course" },
   "effects": [
-    { "type": "base_stats", "stats": { "armor": 70, "speed": 200, "energyCapacity": 220, "heatDissipation": 12, "weightLimit": 50 } },
+  { "type": "base_stats", "stats": { "hp": 120, "armor": 70, "speed": 200, "energyCapacity": 220, "energyRegen": 25, "heatCapacity": 60, "heatDissipation": 12, "weightLimit": 50 } },
     { "type": "hardpoints", "hardpoints": { "head": 1, "torso": 2, "arms": 2, "legs": 2, "generator": 1 } },
-    { "type": "special", "special": ["+20% movement speed", "-10% weapon accuracy"] }
+    { "type": "special", "special": ["+20% movement speed", "-10% weapon accuracy"] },
+    { "type": "weight", "value": 25 }
   ],
   "tags": ["frame", "scout", "light"],
   "rarity": "common",
@@ -18,5 +19,6 @@
   "value": 5000,
   "buyFactor": 1.0,
   "sellFactor": 0.5,
+  
   "experience": null
 }

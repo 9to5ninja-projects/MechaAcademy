@@ -1,0 +1,46 @@
+{
+  "id": "CRD_FRM_LT_SCOUT001",
+  "name": "Scout Frame",
+  "type": "frame",
+  "subtype": "light",
+  "source": "frame_light_001_scout",
+  "description": "A lightweight scout frame with high speed and mobility.",
+  "costs": {},
+  "requirements": { "unlockRequirement": "basic_combat_course" },
+  "effects": [
+    { 
+      "type": "base_stats", 
+      "stats": { 
+        "hp": 120,
+        "armor": 70, 
+        "speed": 200, 
+        "energyCapacity": 220,
+        "energyRegen": 25,
+        "heatCapacity": 60,
+        "heatDissipation": 12, 
+        "weightLimit": 50 
+      } 
+    },
+    { 
+      "type": "hardpoints", 
+      "hardpoints": { 
+        "head": 1, 
+        "torso": 2, 
+        "arms": 2, 
+        "legs": 2
+      } 
+    },
+    { 
+      "type": "special", 
+      "special": ["+20% movement speed", "-10% weapon accuracy"] 
+    }
+  ],
+  "tags": ["frame", "scout", "light"],
+  "rarity": "common",
+  "unlockRequirement": "basic_combat_course",
+  "value": 5000,
+  "buyFactor": 1.0,
+  "sellFactor": 0.5,
+  "weight": 25,
+  "experience": null
+}
